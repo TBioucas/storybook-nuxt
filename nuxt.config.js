@@ -35,9 +35,10 @@ export default {
   storybook: {
     stories: ['~/components/**/*.stories.js', '~/pages/**/*.stories.js'],
     addons: [
-      '@storybook/addon-actions',
-      '@storybook/addon-links',
       '@storybook/addon-essentials',
+      '@storybook/addon-actions',
+      '@storybook/addon-controls',
+      '@storybook/addon-links',
     ],
   },
 };
