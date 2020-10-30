@@ -1,18 +1,9 @@
-import { shallowMount } from '@vue/test-utils';
-import Logo from '../components/Logo';
-
-const factory = () => {
-  return shallowMount(Logo, {});
-};
+import { mount } from '@vue/test-utils';
+import Logo from '@/components/Logo.vue';
 
 describe('Logo', () => {
-  test('mounts properly', () => {
-    const wrapper = factory();
-    expect(wrapper.exists()).toBeTruthy();
-  });
-
-  test('renders properly', () => {
-    const wrapper = factory();
-    expect(wrapper.html()).toMatchSnapshot();
+  test('is a Vue instance', () => {
+    const wrapper = mount(Logo);
+    expect(wrapper.vm).toBeTruthy();
   });
 });
