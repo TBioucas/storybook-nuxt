@@ -11,7 +11,7 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [],
+  css: ['@/assets/index.css'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugin: [],
@@ -37,6 +37,10 @@ export default {
       return config;
     },
     stories: ['~/components/**/*.stories.js', '~/pages/**/*.stories.js'],
-    addons: ['@storybook/addon-essentials', '@storybook/addon-links'],
+    addons: [
+      '@storybook/addon-essentials',
+      '@storybook/addon-controls',
+      '@storybook/addon-links',
+    ],
   },
 };
