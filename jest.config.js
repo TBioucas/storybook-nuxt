@@ -5,6 +5,9 @@ module.exports = {
     '^~/(.*)$': '<rootDir>/$1',
     '^~~/(.*)$': '<rootDir>/$1',
     '^vue$': 'vue/dist/vue.common.js',
+    '^~storybook': '<rootDir>/.nuxt-storybook/storybook/preview.js',
+    '^nuxt_plugin_plugin_0b56b49a':
+      '<rootDir>/.nuxt-storybook/components/plugin.js',
   },
   moduleFileExtensions: ['js', 'vue', 'json'],
   transform: {

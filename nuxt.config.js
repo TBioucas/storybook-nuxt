@@ -33,12 +33,10 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
   storybook: {
+    webpackFinal(config, { configDir }) {
+      return config;
+    },
     stories: ['~/components/**/*.stories.js', '~/pages/**/*.stories.js'],
-    addons: [
-      '@storybook/addon-essentials',
-      '@storybook/addon-actions',
-      '@storybook/addon-controls',
-      '@storybook/addon-links',
-    ],
+    addons: ['@storybook/addon-essentials', '@storybook/addon-links'],
   },
 };
