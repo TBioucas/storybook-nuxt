@@ -14,6 +14,7 @@
     "lint": "npm run lint:js && npm run lint:style",
     "lint:fix": "npm run lint:js:fix && npm run lint:style:fix",
     "test": "jest",
+    "test:update": "jest --updateSnapshot",
     "version": "echo $npm_package_version",
     "storybook": "nuxt storybook",
     "storybook:build": "nuxt storybook build",
